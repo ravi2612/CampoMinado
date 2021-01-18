@@ -11,7 +11,7 @@ data class Campo(val linha: Int, val coluna: Int) {
     var minado : Boolean = false
 
     //Somente leitura
-    val desmarcado : Boolean get() = !marcado
+
     val fechado : Boolean get() = !aberto
     val seguro : Boolean get() = !minado
     val objetivoAlcancado: Boolean get() = seguro && aberto || minado && marcado
